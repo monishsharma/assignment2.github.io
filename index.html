@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Checker</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<script src="js/imageChecker.js"></script>
+	
+</head>
+<body>
+	
+	<div class="row">
+		<div class="col" style="background-color: #5d92c9;">
+			
+			<h1>Image Checker</h1>
+			
+			<label class="custom-file-upload">
+    			<input type="file" accept="image/*" name="image" id="file" multiple="true"  
+    					onchange="loadFile(event)">
+    			Custom Upload
+			</label>
+
+			<button id="compare" class="btnCompare">Check Image</button>
+
+
+
+		</div>
+		<div class="col1">
+			  <div class="imagHolder">
+
+
+			  	<img id="image" class="image">
+			  
+			  </div>
+		</div>
+	</div>
+
+
+	
+	<!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3> Width is : </h3>
+    <h4>Image is too big</h4>
+    <button class="Again">Upload Again</button>
+  </div>
+
+</div>
+
+<div id="myModal1" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3> Width is : </h3>
+    <h4>Image can be uploaded</h4><br<
+    <h4>Uploaded</h4><br>
+    <button class="Again">Ok</button>
+  </div>
+
+</div>	
+
+<div id="myModal2" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3> Width is : </h3>
+    <h4>Image is too small</h4>
+    <button class="Again">Upload Again</button>
+  </div>
+
+</div>
+
+
+
+
+<script src="js/app.js"></script>
+</body>
+</html>
